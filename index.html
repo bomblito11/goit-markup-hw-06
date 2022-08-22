@@ -76,6 +76,63 @@
               <button type="button" class="close-btn" data-modal-close>
                 x
               </button>
+              <form>
+                <p class="form-head">Zostaw swoje dane w formularzu poniżej</p>
+                <div class="form-container">
+                  <label class="form-item">
+                    <p class="label-name">Imię</p>
+                    <div class="label-input">
+                      <svg width="12px" height="12px" class="icon-person">
+                        <use href="./images/icons.svg#icon-person"></use>
+                      </svg>
+                      <input type="text" name="username" class="data-input" />
+                    </div>
+                  </label>
+                  <label class="form-item">
+                    <p class="label-name">Telefon</p>
+                    <div class="label-input">
+                      <svg width="13px" height="13px" class="icon-tel">
+                        <use href="./images/icons.svg#icon-tel"></use>
+                      </svg>
+                      <input
+                        type="tel"
+                        name="phone_number"
+                        class="data-input"
+                      />
+                    </div>
+                  </label>
+                  <label class="form-item">
+                    <p class="label-name">Email</p>
+                    <div class="label-input">
+                      <svg width="15px" height="12px" class="icon-envelope">
+                        <use href="./images/icons.svg#icon-email"></use>
+                      </svg>
+                      <input type="email" name="email" class="data-input" />
+                    </div>
+                  </label>
+                  <label class="form-item">
+                    <div>
+                      <p class="label-name">Komentarz</p>
+                      <textarea
+                        name="feedback"
+                        placeholder="Wprowadź tekst"
+                        class="comment-input"
+                      ></textarea>
+                    </div>
+                  </label>
+                </div>
+                <input
+                  class="checkbox-policy visually-hidden"
+                  id="user-policy"
+                  type="checkbox"
+                  name="policy"
+                />
+                <label class="checkbox-policy-text" for="user-policy">
+                  Oświadczam, iż akceptuję <a href="">Regulamin</a> i
+                  <a href="">Politykę prywatności.</a>
+                </label>
+                <button type="submit" class="form-btn">Wyślij</button>
+              </form>
             </div>
           </div>
         </div>
@@ -451,6 +508,28 @@
               </li>
             </ul>
           </div>
+        </section>
+        <section class="footer-newsletter">
+          <p class="newsletter-title">Zapisz się do newslettera</p>
+          <form class="newsletter">
+            <label>
+              <input
+                class="newsletter-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="newsletter-btn">
+              Zapisz się<svg
+                class="newsletter-btn-icon"
+                width="24px"
+                height="24px"
+              >
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </section>
       </div>
     </footer>
