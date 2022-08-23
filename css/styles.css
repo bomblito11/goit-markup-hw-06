@@ -766,6 +766,14 @@ li button:hover {
   padding-left: 42px;
 }
 
+.data-input:focus + .icon-tel,
+.data-input:focus + .icon-envelope,
+.data-input:focus + .icon-person {
+  outline-color: var(--main-link-color);
+  fill: var(--main-link-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .data-input:focus {
   outline-color: var(--main-link-color);
   fill: var(--main-link-color);
